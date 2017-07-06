@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+ <class name="com.istar.hibernate.bean.User" table="USER">
+        <id name="userId" type="integer" column="UserID">
+              <generator class="increment">
+           
+         </generator>
+           
+        </id>
+        <property column="USER_NAME" name="userName" type="java.lang.String" />
+		<property column="PASSWORD" name="password" type="java.lang.String" />  
+		      
+ 
+		 </class>  
+  
+  <class name="com.istar.hibernate.bean.ContactBook" table="CONTACT_BOOK">  
+ 
+  <id name="ContactId" type="integer" column="ID">
+            <generator class="increment" />  </id>
+ 
+<property column="qid" name="qid" type="java.lang.Integer" />
+<property column="telNo" name="telno" type="java.lang.String" />
+<property column="DOB" name="dob" type="java.lang.String" />
+<property column="Name" name="name" type="java.lang.String" />
+<property column="Address" name="address" type="java.lang.String" />
+		
+<property column="Website" name="website" type="java.lang.String" />
+<property column="Comapnyname" name="companyname" type="java.lang.String" />
+<property column="Landlineno" name="landlineno" type="java.lang.String" />
+ 
+ 
+ </class>  
+ </hibernate-mapping>
+
+
+
+          
+         
+        
