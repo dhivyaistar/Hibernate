@@ -1,3 +1,4 @@
+//test
 package com.istar.hibernate.bean;
 
 
